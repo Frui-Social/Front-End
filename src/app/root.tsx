@@ -1,15 +1,23 @@
 import {
     Links,
+    LinksFunction,
     LiveReload,
     Meta,
+    MetaFunction,
     Outlet,
     Scripts,
     ScrollRestoration
-} from "remix";
-import type { MetaFunction } from "remix";
+} from 'remix';
+import theme from '~/index.css';
+
+import logo from '../images/logo2.png';
+
+export const links: LinksFunction = () => {
+    return [{ rel: 'stylesheet', href: theme }]
+};
 
 export const meta: MetaFunction = () => {
-    return { title: "New Remix App" };
+    return { title: 'Frui Social' };
 };
 
 export default function App() {
@@ -24,12 +32,14 @@ export default function App() {
                 <Links />
             </head>
             <body>
+                <img src={logo} alt="Frui Social" />
+
                 <Outlet />
 
                 <ScrollRestoration />
 
                 <Scripts />
-                {process.env.NODE_ENV === "development" && <LiveReload />}
+                {process.env.NODE_ENV === 'development' && <LiveReload />}
             </body>
         </html>
     );
