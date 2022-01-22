@@ -10,7 +10,7 @@ import {
 } from 'remix';
 import theme from '~/index.css';
 
-import logo from '../images/logo2.png';
+import logo from '../images/logo2.svg';
 
 export const links: LinksFunction = () => {
     return [{ rel: 'stylesheet', href: theme }]
