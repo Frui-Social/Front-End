@@ -1,3 +1,3 @@
-# Front-End
+# Hotfix/Bug Branches
 
-This is the code base dealing with the front-end UI which the user sees.
+Branches which address bugs and fix problems with the app should go under `emendavi/*`
