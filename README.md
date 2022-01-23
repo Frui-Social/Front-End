@@ -1,3 +1,3 @@
-# Front-End
+# Feature Branches
 
-This is the code base dealing with the front-end UI which the user sees.
+Branches which add new features and capabilities to the app should go under `qualitatis/*`
